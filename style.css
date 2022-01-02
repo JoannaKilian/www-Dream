@@ -75,7 +75,7 @@ section.womanInBlack {
 
 .womanInBlack div {
     position: relative;
-    width: 30%;
+    width: 33.33%;
     min-width: 200px;
     max-height: 700px;
     margin: 1% 1%;
@@ -153,6 +153,7 @@ div.my {
 .pictures img, .picturesTwo img {
     width: 100%;
     min-height: 100vh;
+    object-fit: cover;
 }
 
 .my p {
@@ -193,5 +194,8 @@ footer.my div {
 @media (max-width: 800px) {
     body {
         font-size: 16px;
+    }
+    .womanInBlack div {
+        width: 80%;
     }
 }
