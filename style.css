@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+body {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(circle at 0% 0%, rgb(21, 62, 243),rgb(5, 5, 5), rgb(5, 5, 5), rgb(5, 5, 5));
+    min-height: 300vh;
+    font-size: 36px;
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+
+.video h1, .paintGalerry h2, section.describle p {
+    position: absolute;
+    z-index: 1;
+    color: azure;
+    font-size: 1.3em;
+    font-weight: 200;
+    margin: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em,
+    rgb(255, 255, 255) -0.01em -0.01em 0.05em;
+    letter-spacing: .1em;
+}
+
+header.video {
+    max-height: 86vh;
+    overflow: hidden;
+}
+
+.video video {
+    width: 100%;
+}
+.paintGalerry {
+    padding-top: 3.3em ;
+    position: relative;
+    overflow: hidden;
+}
+
+.paintGalerry div.hr {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.787);
+    top: 1.95em;
+    left: 0px;
+    opacity: 1;
+    transition: 2s;
+}
+.paintGalerry div.moveRight {
+    left: 100vw;
+    opacity: 0;
+    height: 1px;
+}
+
+.paintGalerry h2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+section.womanInBlack {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.womanInBlack div {
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    max-height: 700px;
+    margin: 1% 1%;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.womanInBlack img {
+    width: 100%;
+    filter: grayscale(1)
+}
+
+.womanInBlack img:hover {
+    transition: .3s;
+}
+
+.womanInBlack img:hover {
+    transform: rotateZ(3deg) scale(1.1);
+}
+
+.womanInBlack p {
+    position: absolute;
+    font-size: .5em;
+    color: rgba(253, 253, 253, 0.607);
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    transition: .5s;
+}
+
+.womanInBlack p i {
+    opacity: 0;
+    transition: .7s;
+    transform: translateX(-50px);
+}
+
+.womanInBlack img:hover ~ p {
+    transform: translate(-50%, -50%);
+}
+.womanInBlack img:hover ~ p i {
+    opacity: 1;
+    transform: translateX(-20px);
+}
+
+section.describle {
+    position: relative;
+    height: 90vh;
+}
+section.describle p {
+top: 160px;
+left: 0px;
+}
+
+section.last {
+    position: relative;
+}
+
+section.womanOne, section.womanTwo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+}
+div.my, div.pictures, div.myTwo, div.picturesTwo {
+    flex-basis: 50%;
+    position: relative;
+}
+div.my {
+    background-color: #000;
+    height: 100vh;
+    color: cornsilk;
+}
+.pictures img, .picturesTwo img {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.my p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section.womanTwo {
+    z-index: 3;
+    position: absolute;
+    top: 110vh;
+    width: 100%;
+}
+
+div.myTwo {
+    background-color: transparent;
+}
+.myTwo p {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    color: cornsilk;
+    font-size: .5em;
+}
+
+footer.my div {
+    width: 100px;
+    height: 30px;
+    background-color: darkblue;
+    box-shadow: 0px -10px 1px black;
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}
