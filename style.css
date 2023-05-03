@@ -10,7 +10,7 @@ body {
     background-image: radial-gradient(circle at 0% 0%, rgb(21, 62, 243),rgb(5, 5, 5), rgb(5, 5, 5), rgb(5, 5, 5));
     min-height: 300vh;
     font-size: 36px;
-    max-width: 1500px;
+    max-width: 2100px;
     margin: 0 auto;
     
 }
